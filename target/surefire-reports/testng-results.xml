@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-13T21:57:35 MSK" name="Surefire suite" finished-at="2021-09-13T21:58:43 MSK" duration-ms="67360">
+    <groups>
+    </groups>
+    <test started-at="2021-09-13T21:57:35 MSK" name="Surefire test" finished-at="2021-09-13T21:58:43 MSK" duration-ms="67360">
+      <class name="com.patterns.UseActionsTest">
+        <test-method signature="useActionsAndJavaScriptTest()[pri:0, instance:com.patterns.UseActionsTest@19f21b6b]" started-at="2021-09-13T21:58:05 MSK" name="useActionsAndJavaScriptTest" finished-at="2021-09-13T21:58:16 MSK" duration-ms="10648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- useActionsAndJavaScriptTest -->
+      </class> <!-- com.patterns.UseActionsTest -->
+      <class name="com.patterns.UseJavaScriptTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.patterns.UseJavaScriptTest@1a78dacd]" started-at="2021-09-13T21:58:24 MSK" name="setUp" finished-at="2021-09-13T21:58:29 MSK" duration-ms="4197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickOnElementJavaScriptTest()[pri:0, instance:com.patterns.UseJavaScriptTest@1a78dacd]" started-at="2021-09-13T21:58:29 MSK" name="clickOnElementJavaScriptTest" finished-at="2021-09-13T21:58:29 MSK" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnElementJavaScriptTest -->
+        <test-method is-config="true" signature="goBack()[pri:0, instance:com.patterns.UseJavaScriptTest@1a78dacd]" started-at="2021-09-13T21:58:29 MSK" name="goBack" finished-at="2021-09-13T21:58:30 MSK" duration-ms="1463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method signature="sendKeysWithJavaScriptTest()[pri:0, instance:com.patterns.UseJavaScriptTest@1a78dacd]" started-at="2021-09-13T21:58:30 MSK" name="sendKeysWithJavaScriptTest" finished-at="2021-09-13T21:58:30 MSK" duration-ms="58" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='q']"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ES13M8A', ip: '192.168.72.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\spy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08f8a9badb860d14f6f08d28a74fca14
+*** Element info: {Using=name, value=q}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='q']"}
+  (Session info: chrome=93.0.4577.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ES13M8A', ip: '192.168.72.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\spy\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:55574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08f8a9badb860d14f6f08d28a74fca14
+*** Element info: {Using=name, value=q}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.patterns.UseJavaScriptTest.sendKeysWithJavaScriptTest(UseJavaScriptTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendKeysWithJavaScriptTest -->
+        <test-method is-config="true" signature="goBack()[pri:0, instance:com.patterns.UseJavaScriptTest@1a78dacd]" started-at="2021-09-13T21:58:30 MSK" name="goBack" finished-at="2021-09-13T21:58:30 MSK" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.patterns.UseJavaScriptTest@1a78dacd]" started-at="2021-09-13T21:58:30 MSK" name="tearDown" finished-at="2021-09-13T21:58:32 MSK" duration-ms="2016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.patterns.UseJavaScriptTest -->
+      <class name="com.patterns.UseIframeTest">
+        <test-method signature="frameTest()[pri:0, instance:com.patterns.UseIframeTest@1532c619]" started-at="2021-09-13T21:58:16 MSK" name="frameTest" finished-at="2021-09-13T21:58:24 MSK" duration-ms="8572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frameTest -->
+      </class> <!-- com.patterns.UseIframeTest -->
+      <class name="com.patterns.UseWaitersTest">
+        <test-method signature="useWaiters()[pri:0, instance:com.patterns.UseWaitersTest@19f9d595]" started-at="2021-09-13T21:58:32 MSK" name="useWaiters" finished-at="2021-09-13T21:58:41 MSK" duration-ms="8199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- useWaiters -->
+      </class> <!-- com.patterns.UseWaitersTest -->
+      <class name="com.assert_various.AssertBeforeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assert_various.AssertBeforeTest@377c68c6]" started-at="2021-09-13T21:57:35 MSK" name="setUp" finished-at="2021-09-13T21:57:42 MSK" duration-ms="6928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchCssLocator()[pri:0, instance:com.assert_various.AssertBeforeTest@377c68c6]" started-at="2021-09-13T21:57:42 MSK" name="searchCssLocator" finished-at="2021-09-13T21:57:46 MSK" duration-ms="3813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCssLocator -->
+        <test-method is-config="true" signature="goBack()[pri:0, instance:com.assert_various.AssertBeforeTest@377c68c6]" started-at="2021-09-13T21:57:46 MSK" name="goBack" finished-at="2021-09-13T21:57:47 MSK" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method signature="searchSelenium()[pri:0, instance:com.assert_various.AssertBeforeTest@377c68c6]" started-at="2021-09-13T21:57:47 MSK" name="searchSelenium" finished-at="2021-09-13T21:57:50 MSK" duration-ms="2569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSelenium -->
+        <test-method is-config="true" signature="goBack()[pri:0, instance:com.assert_various.AssertBeforeTest@377c68c6]" started-at="2021-09-13T21:57:50 MSK" name="goBack" finished-at="2021-09-13T21:57:50 MSK" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method is-config="true" signature="closeTests()[pri:0, instance:com.assert_various.AssertBeforeTest@377c68c6]" started-at="2021-09-13T21:58:41 MSK" name="closeTests" finished-at="2021-09-13T21:58:43 MSK" duration-ms="1965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTests -->
+      </class> <!-- com.assert_various.AssertBeforeTest -->
+      <class name="com.patterns.tests.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.patterns.tests.SearchTest@1ce93c18]" started-at="2021-09-13T21:57:50 MSK" name="setUp" finished-at="2021-09-13T21:57:54 MSK" duration-ms="3370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByKeyword_FindAll_LinesResultsIsContains_withDataProvider()[pri:0, instance:com.patterns.tests.SearchTest@1ce93c18]" started-at="2021-09-13T21:57:54 MSK" name="searchByKeyword_FindAll_LinesResultsIsContains_withDataProvider" finished-at="2021-09-13T21:57:58 MSK" duration-ms="4615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByKeyword_FindAll_LinesResultsIsContains_withDataProvider -->
+        <test-method is-config="true" signature="goBack()[pri:0, instance:com.patterns.tests.SearchTest@1ce93c18]" started-at="2021-09-13T21:57:58 MSK" name="goBack" finished-at="2021-09-13T21:57:59 MSK" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method signature="typeInSearchFieldOnclickToSearchButtonWithJS()[pri:0, instance:com.patterns.tests.SearchTest@1ce93c18]" started-at="2021-09-13T21:57:59 MSK" name="typeInSearchFieldOnclickToSearchButtonWithJS" finished-at="2021-09-13T21:58:02 MSK" duration-ms="2845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- typeInSearchFieldOnclickToSearchButtonWithJS -->
+        <test-method is-config="true" signature="goBack()[pri:0, instance:com.patterns.tests.SearchTest@1ce93c18]" started-at="2021-09-13T21:58:02 MSK" name="goBack" finished-at="2021-09-13T21:58:02 MSK" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method signature="verifySearchByVoiceTooltipOnGoogle()[pri:0, instance:com.patterns.tests.SearchTest@1ce93c18]" started-at="2021-09-13T21:58:02 MSK" name="verifySearchByVoiceTooltipOnGoogle" finished-at="2021-09-13T21:58:03 MSK" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchByVoiceTooltipOnGoogle -->
+        <test-method is-config="true" signature="goBack()[pri:0, instance:com.patterns.tests.SearchTest@1ce93c18]" started-at="2021-09-13T21:58:03 MSK" name="goBack" finished-at="2021-09-13T21:58:03 MSK" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goBack -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.patterns.tests.SearchTest@1ce93c18]" started-at="2021-09-13T21:58:03 MSK" name="tearDown" finished-at="2021-09-13T21:58:05 MSK" duration-ms="2436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.patterns.tests.SearchTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
