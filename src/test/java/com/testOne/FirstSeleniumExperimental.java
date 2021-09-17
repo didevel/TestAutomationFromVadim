@@ -1,4 +1,4 @@
-package com;
+package com.testOne;
 
 import com.helpers.StringUtil;
 import org.openqa.selenium.By;

@@ -1,4 +1,4 @@
-package com;
+package com.testOne;
 
 import org.testng.annotations.Test;
 import org.testng.collections.Lists;
