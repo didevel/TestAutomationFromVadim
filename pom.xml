@@ -19,7 +19,7 @@
         <java.version>${jdk.version}</java.version>
 
         <allure.version>2.13.2</allure.version>
-        
+
         <aspectj.version>1.9.5</aspectj.version>
     </properties>
 
