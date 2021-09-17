@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Tests">
+    <test name="testOne" preserve-order="true">
+        <classes>
+            <class name="com.testOne.FirstSeleniumExperimental"/>
+            <class name="com.testOne.TmpExperimental"/>
+        </classes>
+    </test>
+</suite>
